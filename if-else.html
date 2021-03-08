@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If Else Post Test</title>
+</head>
+<body>
+    <h2>If-Else</h2>
+    Masukkan Hari : <input type="text" id="input"/><button type="button" onclick="CekHari()">Cek</button><br/><br/> 
+    <script>
+        function CekHari(){
+        var hariEsok =document.getElementById("input").value; 
+
+        if(hariEsok === "Senin"){
+            document.write("<h3>Hari esok adalah Selasa</h3>");
+        }else if(hariEsok === "Selasa"){
+            document.write("<h3>Hari esok adalah Rabu</h3>");
+        }else if(hariEsok === 'Rabu'){
+            document.write("<h3>Hari esok adalah Kamis</h3>");
+        }else if(hariEsok === 'Kamis'){
+            document.write("<h3>Hari esok adalah Jumat</h3>");
+        }else if(hariEsok === 'Jumat'){
+            document.write("<h3>Hari esok adalah Sabtu</h3>");
+        }else if(hariEsok === 'Sabtu'){
+            document.write("<h3>Hari esok adalah Minggu</h3>");
+        }else if(hariEsok === 'Minggu'){
+            document.write("<h3>Hari esok adalah Senin</h3>");
+        }
+        }
+        
+
+       
+    </script>
+</body>
+</html>

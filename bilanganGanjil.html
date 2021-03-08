@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilangan Ganjil Post Test</title>
+</head>
+<body>
+    <h2>Bilangan Ganjil</h2>
+    Input : <input type="number" id="input"/><button type="button" onclick="CalcGan()">Calculate</button><br/><br/> 
+    Hasil : <span id="hasil"></span>    
+    <script>
+        function CalcGan(){
+        var nomer =document.getElementById("input").value; 
+        document.getElementById("hasil").innerHTML=""; 
+
+        for (i=0;i<=nomer;i++){     
+        if (i%2==1){
+            if(i>2)document.getElementById("hasil").innerHTML+=", "; 
+            document.getElementById("hasil").innerHTML+=i; 
+           
+         }
+        }
+       
+              
+    }   
+    </script>
+</body>
+</html>
